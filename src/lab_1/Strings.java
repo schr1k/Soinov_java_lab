@@ -2,7 +2,7 @@ package lab_1;
 
 public class Strings {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         String text = "Java is great Java";
 
@@ -22,8 +22,8 @@ public class Strings {
             System.out.println(word);
         }
 
-        String s1 = new String("Java");
-        String s2 = new String("Java");
+        String s1 = "Java";
+        String s2 = "Java";
         String s3 = "java";
 
         System.out.println("\nСравнение строк:");

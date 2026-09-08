@@ -2,7 +2,7 @@ package lab_1;
 
 public class Conditions {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         int age = 20;
         boolean hasTicket = true;

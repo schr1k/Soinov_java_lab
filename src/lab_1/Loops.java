@@ -2,7 +2,7 @@ package lab_1;
 
 public class Loops {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         System.out.println("Цикл for:");
 

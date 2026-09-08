@@ -2,7 +2,7 @@ package lab_1;
 
 public class BoxingExample {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         int a = 10;
         Integer b = a;

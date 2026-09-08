@@ -2,7 +2,7 @@ package lab_1;
 
 public class SwitchExample {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         int month = 2;
 

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class StringCompare {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
