@@ -1,3 +1,5 @@
+package lab_1;
+
 public class TernaryExample {
 
     public static void main(String[] args) {
