@@ -1,4 +1,4 @@
-package lab_2.domain;
+package lab_3.domain;
 
 public class Person {
 
@@ -13,11 +13,14 @@ public class Person {
         this.age = age;
     }
 
-    public Person(String firstName, String secondName, int age, String phone) {
+    public Person(String firstName, String secondName, int age,
+                  String phone) throws InvalidPhoneNumberException {
+
         this.firstName = firstName;
         this.secondName = secondName;
         this.age = age;
-        this.phone = phone;
+
+        setPhone(phone);
     }
 
     public String getFirstName() {
@@ -40,7 +43,15 @@ public class Person {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(String phone)
+            throws InvalidPhoneNumberException {
+
+        if (phone == null || !phone.matches("\\d{11}")) {
+            throw new InvalidPhoneNumberException(
+                    "Некорректный номер телефона: " + phone
+            );
+        }
+
         this.phone = phone;
     }
 }
